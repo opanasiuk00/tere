@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="./css/fonts/stylesheet.css")
+        link(rel="stylesheet" href="./css/normalize.css")
+        link(rel="stylesheet" href="./css/style.css")
+        title Tere
+    body
+        header.header
+            .container
+                .header__inner
+                    .header__logo
+                        img(class="header__logo-img" src="./img/header-logo.svg" alt="tere")
+                    button(class="header__button-open")
+                        span.header__button-text open menu
+                        img(class="header__button-img" src="./img/header-open.svg")
+                    nav(class="header__menu")
+                        button(class="header__button-close")
+                            span.header__button-text close menu
+                            img(class="header__button-img" src="./img/header-close.svg")
+                        ul.header__list
+                            li.header__item
+                                a(class="header__item-link" href="#") Home
+                            li.header__item
+                                a(class="header__item-link" href="#") How tere works
+                            li.header__item
+                                a(class="header__item-link" href="#") Tere benefits
+                            li.header__item
+                                button(class="header__button") Help center
+        section.top
+            .container
+                .top__inner
+                    .top__content
+                        h1.top__title DOWNLOAD APP, SAVE MONEY, MAKE FRIENDS!
+                        p.top__description Its simple and its free. Play your part in reducing Carbon Footprint and help Mother Nature to sustain its beauty. So what are you waiting for ? Lets ride together
+                        .top__buttons
+                            button(class="top__button top__button--android") Download
+                            button(class="top__button top__button--ios") Download
+                    .top__picture
+                        img(class="top__img" src="./img/car-map.svg" alt="car")
+        script(src="script/script.js")
